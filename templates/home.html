@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title> Talk Tutor </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<nav>
+    <div class = "top-bar">
+        <p> talk tutor</p>
+        <a class = "left" href = "{{url_for('tool')}}"> demo</a>
+    </div>
+    <div class = "line"></div>
+</nav>
+<body>
+    <div class = "graphic">
+        <p class = "main"><b>pronunciation</b>, re-imagined</p>
+        <div class = "subtext">
+            <div class = "word" id = "word1">a&nbsp;</div>
+            <div class = "word" id = "word2"><b>word</b>&nbsp;</div>
+            <div class = "word" id = "word3">by&nbsp;</div>
+            <div class = "word" id = "word4"><b>word</b>&nbsp;</div>
+            <div class = "word" id = "word5">tool</div>
+        </div>
+        <button class = "button">
+            <a class = "button-text" href = "{{url_for('tool')}}">get started</a>
+            <i class="fa fa-angle-right" style="color:#9D654E"></i></button>
+    </div>  
+    <script src="../static/js/home.js"></script>
+</body>
+
+</html>

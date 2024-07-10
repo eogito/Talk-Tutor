@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <title> Talk Tutor </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <script type="module">
+        importScripts('https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js');
+    </script>
+</head>
+<nav>
+    <div class = "top-bar">
+        <a class = "right" href = "/"> talk tutor</a>
+        <a class = "left" href = "#"> demo</a>
+    </div>
+    <div class = "line"></div>
+</nav>
+<body>
+    <div class = "bg">
+        <div class = "subtitle">
+            Once ready, click the start button and read the prompt below. Click the stop button once you have finished reading. Please do not read too fast.
+        </div>
+        <div class = "subtitle">
+            <button id = "start">start</button>
+            <button id = "stop1">stop</button>
+        </div>
+        <div class = "bg-body">
+            <div class>
+                <p class = "sub">The quick brown <br> fox jumps over the<br>lazy dog</p>
+            </div>
+        <div class = "sub">
+            <span class="{% if scores[0] == False %}wrong{% endif %} wrd" id = "wrd1">The</span>
+            <span class = "{% if scores[1] == False %}wrong{% endif %} wrd" id = "wrd2">quick</span>
+            <span class = "{% if scores[2] == False %}wrong{% endif %} wrd" id = "wrd3">brown</span><br>
+            <span class = "{% if scores[3] == False %}wrong{% endif %} wrd" id = "wrd4">fox</span>
+            <span class = "{% if scores[4] == False %}wrong{% endif %} wrd" id = "wrd5">jumps</span>
+            <span class = "{% if scores[5] == False %}wrong{% endif %} wrd" id = "wrd6">over</span>
+            <span class = "{% if scores[6] == False %}wrong{% endif %} wrd" id = "wrd7">the</span><br>
+            <span class = "{% if scores[7] == False %}wrong{% endif %} wrd" id = "wrd8">lazy</span>
+            <span class = "{% if scores[8] == False %}wrong{% endif %} wrd" id = "wrd9">dog</span>
+        </div>
+        </div>
+    </div>
+    <script src="../static/js/button.js"></script>
+    <script src="../static/js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+:root {
+    --my-font-sans-serif: 'Inter', sans-serif;
+}
+
+::after,
+::before {
+    box-sizing: border-box
+}
+
+body {
+    font-family: var(--my-font-sans-serif);
+    background: linear-gradient(120deg, rgba(236,204,116,1) 0%, rgba(229,189,78,1) 25%, rgba(229,149,78,1) 100%);
+    color: #513F37;
+}
+
+
+.top-bar{
+    padding-left: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: -0.5rem;
+    background-color: transparent;
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left{
+    padding-top: 1.5rem;
+    text-decoration: none;
+    text-align: right;
+    padding-right: 5rem;
+    color: #513F37;
+}
+
+.left:focus,
+.left:hover{
+    color: #513F37;
+}
+
+.right{
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    text-decoration: none;
+    text-align: left;
+    color: #513F37;
+}
+
+.right:focus,
+.right:hover{
+    color: #513F37;
+}
+.graphic{
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    background: transparent;
+    height: 81vh;
+    text-align: center;
+}
+
+.bg{
+    margin-top: 0.5rem;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    background: transparent;
+    height: 89vh;
+}
+
+.main{
+    font-size: 5rem;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+.subtext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.button{
+    padding: 1rem;
+    width:fit-content;
+    height: fit-content;
+    background: transparent;
+    border-radius: 15px;
+    border: 2px solid #9D654E;
+    color: #9D654E;
+    font-size: 1.5rem;
+}
+
+.button:focus,
+.button:hover {
+    background: #e5bd4eaa;
+}
+
+.line{
+    background-color: #9D654E;
+    height: 2px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.word {
+    opacity: 0;
+    margin: 0 10px;
+    transition: opacity 0.2s ease;
+}
+
+.wrd {
+    opacity: 0;
+    margin: 0 10px;
+    transition: opacity 0.2s ease;
+}
+
+.button-text{
+    text-decoration: none;
+    color: #9D654E;
+}
+
+.button-text:focus,
+.button-text:hover{
+    color: #9D654E;
+}
+
+.wrong {
+    color: red;
+}
+
+.bg-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subtitle{
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+.sub{
+    font-size: 3rem;
+    padding-left: 5rem;
+}
